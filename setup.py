@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='cli-criptografia',
     version='0.1',
-    packages=['cli'],
+    packages=find_packages(),
     install_requires=[
-        'Click',
+        'click',
     ],
     entry_points={
         'console_scripts': [
